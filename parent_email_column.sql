@@ -1,0 +1,2 @@
+
+ALTER TABLE users ADD COLUMN IF NOT EXISTS parent_email VARCHAR(255);
