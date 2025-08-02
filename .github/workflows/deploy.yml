@@ -3,7 +3,7 @@ name: Deploy to IONOS via SFTP
 on:
   push:
     branches:
-      - main  # Adjust if your default branch is named differently
+      - main
 
 jobs:
   deploy:
@@ -17,13 +17,18 @@ jobs:
       run: sudo apt-get update && sudo apt-get install -y lftp
 
     - name: Generate config.php from secrets
+      env:
+        DB_HOST: ${{ secrets.SPARK_DBHOST }}
+        DB_NAME: ${{ secrets.SPARK_DBNAME }}
+        DB_USER: ${{ secrets.SPARK_DBUSERNAME }}
+        DB_PASS: ${{ secrets.SPARK_DBPASSWORD }}
       run: |
         cat <<EOF > config.php
 <?php
-define('DB_HOST', '${{ secrets.SPARK_DBHOST }}');
-define('DB_NAME', '${{ secrets.SPARK_DBNAME }}');
-define('DB_USER', '${{ secrets.SPARK_DBUSERNAME }}');
-define('DB_PASS', '${{ secrets.SPARK_DBPASSWORD }}');
+define('DB_HOST', '${DB_HOST}');
+define('DB_NAME', '${DB_NAME}');
+define('DB_USER', '${DB_USER}');
+define('DB_PASS', '${DB_PASS}');
 
 \$pdo = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
 \$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
