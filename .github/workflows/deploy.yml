@@ -3,7 +3,7 @@ name: Deploy to IONOS via SFTP
 on:
   push:
     branches:
-      - main
+      - main  # Adjust if your default branch is named differently
 
 jobs:
   deploy:
@@ -23,17 +23,15 @@ jobs:
         DB_USER: ${{ secrets.SPARK_DBUSERNAME }}
         DB_PASS: ${{ secrets.SPARK_DBPASSWORD }}
       run: |
-        cat <<EOF > config.php
-<?php
-define('DB_HOST', '${DB_HOST}');
-define('DB_NAME', '${DB_NAME}');
-define('DB_USER', '${DB_USER}');
-define('DB_PASS', '${DB_PASS}');
-
-\$pdo = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
-\$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-?>
-EOF
+        echo "<?php" > config.php
+        echo "define('DB_HOST', '${DB_HOST}');" >> config.php
+        echo "define('DB_NAME', '${DB_NAME}');" >> config.php
+        echo "define('DB_USER', '${DB_USER}');" >> config.php
+        echo "define('DB_PASS', '${DB_PASS}');" >> config.php
+        echo "" >> config.php
+        echo "\$pdo = new PDO(\"mysql:host=\" . DB_HOST . \";dbname=\" . DB_NAME, DB_USER, DB_PASS);" >> config.php
+        echo "\$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);" >> config.php
+        echo "?>" >> config.php
 
     - name: Deploy via SFTP
       env:
@@ -46,6 +44,6 @@ EOF
         lftp -e "
           set sftp:auto-confirm yes;
           open -u $SFTP_USER,$SFTP_PASSWORD -p $SFTP_PORT sftp://$SFTP_HOST;
-          mirror -R ./ $SFTP_TARGET_DIR --delete --verbose;
+          mirror -R ./ $SFTP_TARGET_DIR --delete --verbose --exclude-glob .git* --exclude config.sample.php;
           bye
         "
