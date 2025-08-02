@@ -16,6 +16,20 @@ jobs:
     - name: Install lftp
       run: sudo apt-get update && sudo apt-get install -y lftp
 
+    - name: Generate config.php from secrets
+      run: |
+        cat <<EOF > config.php
+<?php
+define('DB_HOST', '${{ secrets.SPARK_DBHOST }}');
+define('DB_NAME', '${{ secrets.SPARK_DBNAME }}');
+define('DB_USER', '${{ secrets.SPARK_DBUSERNAME }}');
+define('DB_PASS', '${{ secrets.SPARK_DBPASSWORD }}');
+
+\$pdo = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
+\$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+?>
+EOF
+
     - name: Deploy via SFTP
       env:
         SFTP_HOST: ${{ secrets.SFTP_HOST }}
