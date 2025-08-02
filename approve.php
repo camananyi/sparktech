@@ -19,6 +19,6 @@ $link = "https://yourdomain.com/setup_password.php?token=$token";
 mail($user['email'], "Set up your SPARK login",
      "You're approved! Click to set your password:
 $link",
-     "From: info@sparktechafrica.com");
+     "From: sparktechafrica@my9ja.com");
 
 header("Location: dashboard.php");
