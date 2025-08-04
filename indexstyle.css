@@ -7,4 +7,7 @@
 .btn-navy:hover {
   background-color: white;
   color: #002244;
+  outline-style: solid; /* or dotted, dashed, double, groove, ridge, inset, outset */
+  outline-color: #002244; /* or a hex code, RGB, HSL value */
+  outline-width: 2px;
 }

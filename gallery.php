@@ -39,7 +39,7 @@ $images = glob("uploads/*.{jpg,jpeg,png,gif,mp4}", GLOB_BRACE);
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
   <div class="container">
-    <a class="navbar-brand" href="#">SPARK</a>
+    <a class="navbar-brand" href="index.html">SPARK</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
