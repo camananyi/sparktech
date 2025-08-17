@@ -76,7 +76,7 @@
       <div class="mb-3"><input type="email" name="email" class="form-control" placeholder="Email" required></div>
       <!-- <div class="mb-3"><textarea name="why" class="form-control" placeholder="Why do you want to join SPARK Tech Africa?" required></textarea></div>
       <div class="mb-3"><textarea name="experience" class="form-control" placeholder="Any previous tech experience?"></textarea></div> -->
-      <a href="https://forms.gle/rEPUZEzLk6HTaU229" class="btn btn-primary">Register as Mentee</button>
+      <a href="https://forms.gle/rEPUZEzLk6HTaU229" button type="submit" class="btn btn-primary">Register as Mentee</button>
     </form>
 
     <!-- Mentor Form -->
