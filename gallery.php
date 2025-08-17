@@ -54,7 +54,7 @@ $images = glob("uploads/*.{jpg,jpeg,png,gif,mp4}", GLOB_BRACE);
     </div>
   </div>
 </nav>
-<div class="container my-4">
+<!-- <div class="container my-4">
   <h2 class="mb-4 text-center">SPARK Showcase Gallery</h2>
   <div class="row" data-masonry='{"percentPosition": true }'>
     <?php foreach($images as $file): ?>
@@ -69,6 +69,6 @@ $images = glob("uploads/*.{jpg,jpeg,png,gif,mp4}", GLOB_BRACE);
       </div>
     <?php endforeach; ?>
   </div>
-</div>
+</div> -->
 </body>
 </html>

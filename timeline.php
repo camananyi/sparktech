@@ -48,7 +48,7 @@
   </div>
 </nav>
 <div class="container my-4">
-  <img src="timeline.png" alt="SPARK Timeline" width="500" height="600">
+  <img src="timeline.png" alt="SPARK Timeline" width="600" height="1000">
 </div>
 </body>
 </html>
