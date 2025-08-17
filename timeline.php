@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mentor Stories | SPARK</title>
+  <title> Mentor Mentee Timeline | SPARK</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
   <style>
@@ -48,31 +48,7 @@
   </div>
 </nav>
 <div class="container my-4">
-  <h2 class="mb-4 text-center">Mentor/Mentee Stories</h2>
-  <div class="row">
-    <div class="col-md-6 mb-4">
-      <div class="card">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/mOqTt379FQ0" title="Inspiring Mentee Story 1" allowfullscreen></iframe>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Camille's Journey into Tech</h5>
-          <p class="card-text">Camille shares how her SPARK mentorship helped her overcome challenges in coding.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6 mb-4">
-      <div class="card">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/KxUXtkszbvo" title="Inspiring Mentee Story 2" allowfullscreen></iframe>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Camille MAGIC Presentation</h5>
-          <p class="card-text">Camille demonstated her wish list project.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <img src="timeline.png" alt="SPARK Timeline">
 </div>
 </body>
 </html>
