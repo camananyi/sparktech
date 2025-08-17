@@ -39,7 +39,7 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link active" href="register.php">Register</a></li>
         <!-- <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li> -->
-        <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://albums.memento.com/sparktechafrica">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="learn.php">Learn</a></li>
         <li class="nav-item"><a class="nav-link" href="stories.php">Stories</a></li>
         <li class="nav-item"><a class="nav-link" href="timeline.php">Timeline</a></li>
@@ -65,8 +65,8 @@
     <form id="mentee-form" class="role-form" style="display:none" action="submit_registration.php" method="POST">
       <div class="intro-box">
         <strong>Are you a girl in Africa who’s passionate about STEM?</strong><br>
-        SPARK helps you connect with a mentor who understands your dreams and wants to help you grow.<br><br>
-        ✨ No experience required — just curiosity, drive, and an open mind.<br><br>
+        SPARK helps you connect with a mentor who understands your dreams and wants to help you grow.<br>
+        <br>
         When you apply, we’ll get to know you and pair you with someone who aligns with your goals.
       </div>
       <input type="hidden" name="role" value="mentee">
