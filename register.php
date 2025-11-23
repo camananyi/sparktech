@@ -64,12 +64,13 @@
     <!-- Mentee Form -->
     <form id="mentee-form" class="role-form" style="display:none" action="submit_registration.php" method="POST">
       <div class="intro-box">
-        <strong>Are you a girl in Africa who’s passionate about STEM?</strong><br>
-        SPARK helps you connect with a mentor who understands your dreams and wants to help you grow.<br>
+        <strong>Sorry, we are no longer taking applications for mentees at this time.</strong><br>
+        I hope you will try and re-apply for our next session. 
+        <!-- SPARK helps you connect with a mentor who understands your dreams and wants to help you grow.<br>
         <br>
-        When you apply, we’ll get to know you and pair you with someone who aligns with your goals.
+        When you apply, we’ll get to know you and pair you with someone who aligns with your goals. -->
       </div>
-      <input type="hidden" name="role" value="mentee">
+      <!-- <input type="hidden" name="role" value="mentee">
       <div class="mb-3"><input type="text" name="name" class="form-control" placeholder="Full Name" required></div>
       <!-- <div class="mb-3"><input type="number" name="age" class="form-control" placeholder="Age" required></div> -->
       <!-- <div class="mb-3"><input type="text" name="school" class="form-control" placeholder="School" required></div> -->
@@ -78,7 +79,7 @@
       <div class="mb-3"><textarea name="experience" class="form-control" placeholder="Any previous tech experience?"></textarea></div> -->
       <!-- <a href="https://forms.gle/rEPUZEzLk6HTaU229" button type="submit" class="btn btn-primary">Register as Mentee</button> -->
       <a href="https://forms.gle/rEPUZEzLk6HTaU229" class="btn btn-primary" target="_blank">
-        Register as Mentee
+        Register as Mentee -->
       </a>
     </form>
 
