@@ -64,9 +64,8 @@
     <!-- Mentee Form -->
     <form id="mentee-form" class="role-form" style="display:none" action="submit_registration.php" method="POST">
       <div class="intro-box">
-        <strong>SPARK helps you connect with a mentor who understands your dreams and wants to help you grow.<br>
-        <br>
-        When you apply, we’ll get to know you and pair you with someone who aligns with your goals.
+        <strong>SPARK helps you connect with a mentor who understands your dreams and wants to help you grow.<strong><br>
+        <p>When you apply, we’ll get to know you and pair you with someone who aligns with your goals.<p>
       </div>
       <input type="hidden" name="role" value="mentee">
       <div class="mb-3"><input type="text" name="name" class="form-control" placeholder="Full Name" required></div>
@@ -75,10 +74,9 @@
       <div class="mb-3"><input type="email" name="email" class="form-control" placeholder="Email" required></div> 
       <div class="mb-3"><textarea name="why" class="form-control" placeholder="Why do you want to join SPARK Tech Africa?" required></textarea></div>
       <div class="mb-3"><textarea name="experience" class="form-control" placeholder="Any previous tech experience?"></textarea></div>
-      <a href="https://forms.gle/rEPUZEzLk6HTaU229" button type="submit" class="btn btn-primary">Register as Mentee</button>
-      <a href="https://forms.gle/rEPUZEzLk6HTaU229" class="btn btn-primary" target="_blank">
-        Register as Mentee 
-      </a>
+      <button type="submit" class="btn btn-primary">
+         Register as Mentee
+      </button>
     </form>
 
     <!-- Mentor Form -->
