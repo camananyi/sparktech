@@ -65,7 +65,7 @@
 function showForm(type) {
     const frame = document.getElementById("formFrame");
 
-    if (type === "mentor") {
+    if (type === "mentee") {
         frame.src = "https://docs.google.com/forms/d/e/1FAIpQLSeKdf_P5CB-lE-levyxtetAd2zsGTqXbzfwXf4rfQ6CDhQrCA/viewform?embedded=true";
     } else {
         frame.src = "https://docs.google.com/forms/d/e/1FAIpQLSe5DXtG8qksTWIJM3gP3NXluReMRFQkbryZOsDjoEa43KQcSA/viewform?embedded=true";
