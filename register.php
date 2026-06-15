@@ -19,11 +19,22 @@
     }
   </style>
   <script>
+    // function toggleForms(role) {
+    //   document.querySelectorAll('.role-form').forEach(div => div.style.display = 'none');
+    //   if (role) {
+    //     document.getElementById(role + '-form').style.display = 'block';
+    //   }
+    // }
     function toggleForms(role) {
-      document.querySelectorAll('.role-form').forEach(div => div.style.display = 'none');
-      if (role) {
+    alert(role);
+
+    document.querySelectorAll('.role-form').forEach(div => {
+        div.style.display = 'none';
+    });
+
+    if (role) {
         document.getElementById(role + '-form').style.display = 'block';
-      }
+    }
     }
   </script>
 </head>
@@ -42,7 +53,6 @@
         <li class="nav-item"><a class="nav-link" href="https://albums.memento.com/sparktechafrica">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="learn.php">Learn</a></li>
         <li class="nav-item"><a class="nav-link" href="stories.php">Stories</a></li>
-        <li class="nav-item"><a class="nav-link" href="timeline.php">Timeline</a></li>
       </ul>
     </div>
   </div>
