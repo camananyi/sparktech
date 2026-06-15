@@ -40,7 +40,7 @@
   </div>
 </nav>
 
-<div class="container mt-4">
+<div class="container mt-4 text-center">
     <h2>Register for SPARK</h2>
 
     <div class="mb-3">
@@ -72,12 +72,9 @@ function showForm(type) {
     }
 }
 
-// <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5DXtG8qksTWIJM3gP3NXluReMRFQkbryZOsDjoEa43KQcSA/viewform?embedded=true" width="640" height="1689" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 // Show one by default
-// showForm("mentee");
+showForm("mentee");
 </script>
-
-<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKdf_P5CB-lE-levyxtetAd2zsGTqXbzfwXf4rfQ6CDhQrCA/viewform?embedded=true" width="100%" height="1215" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
