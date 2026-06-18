@@ -42,7 +42,7 @@
         <!-- <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li> -->
         <li class="nav-item"><a class="nav-link" href="https://albums.memento.com/sparktechafrica">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="learn.php">Learn</a></li>
-        <li class="nav-item"><a class="nav-link" href="stories.php">Stories</a></li>
+        <li class="nav-item"><a class="nav-link active" href="stories.php">Stories</a></li>
       </ul>
     </div>
   </div>

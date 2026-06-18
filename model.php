@@ -21,9 +21,8 @@ body {
 .hero {
     background: #0055aa;
     color: white;
-    padding: 100px 20px;
     text-align: center;
-    height: 400px
+    padding: 120px 20px;
 }
 
 .hero h1 {
@@ -316,7 +315,7 @@ footer {
         </p>
 
         <a href="register.php" class="btn btn-light btn-lg mt-3">
-            Register Your Interest
+            Sign Up
         </a>
     </div>
 </section>
