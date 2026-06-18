@@ -24,13 +24,14 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
   <div class="container">
-    <a class="navbar-brand" href="index.html">SPARK</a>
+    <a class="navbar-brand" href="#">SPARK</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="register.php">Register</a></li>
+        <li class="nav-item"><a class="nav-link" href="model.php">Model</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
         <!-- <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li> -->
         <li class="nav-item"><a class="nav-link" href="https://albums.memento.com/sparktechafrica">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="learn.php">Learn</a></li>

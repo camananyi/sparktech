@@ -1,62 +1,359 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Model | SPARK</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Model | SPARK</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-custom {
+    background-color: #003366;
+}
+
+.hero {
+    background: linear-gradient(135deg, #003366, #0055aa);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    font-size: 3rem;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.stats {
+    background: #003366;
+    color: white;
+    padding: 60px 20px;
+}
+
+.stats h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.project-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    height: 100%;
+}
+
+.cta {
+    background: linear-gradient(135deg, #0055aa, #003366);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.timeline-number {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #003366;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto 20px;
+}
+</style>
 </head>
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; }
-    .hero { background-color: #f9f9f9; padding: 60px 20px; text-align: center; }
-    .features { padding: 40px 20px; }
-    .feature-card {
-      padding: 20px;
-      border-radius: 12px;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    footer {
-      padding: 20px;
-      background: #333;
-      color: #fff;
-      text-align: center;
-    }
-    .navbar-custom {
-      background-color: #003366;
-    }
-    .carousel-item img {
-      height: 450px;
-      object-fit: cover;
-    }
-  </style>
 
 <body>
-  
+
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">SPARK</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="register.php">Register</a></li>
-        <!-- <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li> -->
-        <li class="nav-item"><a class="nav-link" href="https://albums.memento.com/sparktechafrica">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="learn.php">Learn</a></li>
-        <li class="nav-item"><a class="nav-link" href="stories.php">Stories</a></li>
-      </ul>
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">SPARK</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="model.php">Model</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://albums.memento.com/sparktechafrica">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="learn.php">Learn</a></li>
+                <li class="nav-item"><a class="nav-link" href="stories.php">Stories</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
-<div class="container my-4">
-  <h2 class="mb-4 text-center">How SPARK Works</h2>
-  <p> SPARK Tech Africa is a technology education program designed to help students build foundational computer science and programming skills through structured coursework and hands-on projects.
-Students selected for the program will be enrolled in an online course delivered through Google Classroom. Throughout the program, students will complete lessons, coding exercises, and assignments that introduce key computer science concepts and programming skills.
-After completing the course curriculum, students will apply their knowledge by designing and building an independent final project. The project allows students to demonstrate what they have learned while exploring a topic that interests them.
-Unlike traditional one-on-one mentorship programs, students will work independently through the course material at their own pace. However, support will always be available. If a student encounters a challenge they cannot solve on their own, they may submit a help request form. A volunteer mentor will then schedule a meeting to provide guidance, answer questions, and help the student overcome obstacles before they continue working independently.
-This model encourages self-directed learning while still providing personalized support when needed. By the end of the program, students will have developed technical skills, problem-solving abilities, and a completed project that showcases their growth.
-</p>
-</div>
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <h1>Learn. Build. Create.</h1>
+        <p class="mt-4">
+            SPARK Tech Africa empowers students with computer science skills
+            through structured learning, hands-on coding projects, and mentor support.
+        </p>
+
+        <a href="register.php" class="btn btn-light btn-lg mt-4">
+            Join the Next Cohort
+        </a>
+    </div>
+</section>
+
+<!-- Intro -->
+<section class="container py-5">
+    <h2 class="section-title">What Is SPARK?</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+            <p class="lead text-center">
+                SPARK Tech Africa is a technology education program designed to help
+                students develop foundational computer science and programming skills.
+                Students progress through a structured online curriculum and then
+                apply what they learn by creating a final project of their own.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Journey -->
+<section class="container py-5">
+    <h2 class="section-title">Your SPARK Journey</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-3">
+            <div class="feature-card text-center">
+                <div class="timeline-number">1</div>
+                <h4>Apply</h4>
+                <p>
+                    Submit an application and join the next SPARK cohort.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="feature-card text-center">
+                <div class="timeline-number">2</div>
+                <h4>Learn</h4>
+                <p>
+                    Complete lessons, coding exercises, and assignments through Google Classroom.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="feature-card text-center">
+                <div class="timeline-number">3</div>
+                <h4>Build</h4>
+                <p>
+                    Design and create a final project using the skills you've learned.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="feature-card text-center">
+                <div class="timeline-number">4</div>
+                <h4>Get Support</h4>
+                <p>
+                    Request help from volunteer mentors whenever you need guidance.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Benefits -->
+<section class="container py-5">
+    <h2 class="section-title">Why This Model Works</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="feature-card text-center">
+                <i class="bi bi-laptop"></i>
+                <h4>In-depth Online Learning</h4>
+                <p>
+                    Students can learn on their own schedule, with indepth videos to guide them.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="feature-card text-center">
+                <i class="bi bi-lightbulb"></i>
+                <h4>Project-Based</h4>
+                <p>
+                    Learning is reinforced through problem sets and projects rather than memorization.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="feature-card text-center">
+                <i class="bi bi-people"></i>
+                <h4>Mentor Support</h4>
+                <p>
+                    Students receive guidance when they need it while remaining independent learners.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="container py-5">
+    <h2 class="section-title">Projects Students Could Build</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="project-card">
+                <h4>Games</h4>
+                <p>
+                    Quiz games, number guessing games, adventure games, and more.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="project-card">
+                <h4>Tools</h4>
+                <p>
+                    Budget Tracker, To-Do List, Password Generator
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="project-card">
+                <h4>Creative & Storytelling</h4>
+                <p>
+                    Story generator, fortune teller, madlibs, interactive story
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+    <div class="container">
+        <div class="row text-center">
+
+            <div class="col-md-4">
+                <h2>100%</h2>
+                <p>Problem Set-Based Learning</p>
+            </div>
+
+            <div class="col-md-4">
+                <h2>1</h2>
+                <p>Final Portfolio Project</p>
+            </div>
+
+            <div class="col-md-4">
+                <h2>∞</h2>
+                <p>Opportunities to Create</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Support Section -->
+<section class="container py-5">
+    <h2 class="section-title">Need Help?</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="feature-card text-center">
+                <i class="bi bi-chat-dots"></i>
+                <h4>Mentor Assistance Available</h4>
+
+                <p>
+                    If a student becomes stuck on a lesson, coding challenge,
+                    or project component, they can submit a support request.
+                    A volunteer mentor will schedule a meeting to provide guidance
+                    and help them continue progressing.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container">
+        <h1>Ready to Start Your Coding Journey?</h1>
+
+        <p class="lead mt-3">
+            Join a community of students learning technology skills and building real projects.
+        </p>
+
+        <a href="register.php" class="btn btn-light btn-lg mt-3">
+            Register Your Interest
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    © 2025 SPARK Initiative. Empowering the next generation of African tech leaders.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

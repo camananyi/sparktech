@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mentor Stories | SPARK</title>
+  <title>Model | SPARK</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
   <style>
@@ -28,7 +28,9 @@
       object-fit: cover;
     }
   </style>
+
 <body>
+  
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
   <div class="container">
     <a class="navbar-brand" href="#">SPARK</a>
@@ -47,32 +49,15 @@
     </div>
   </div>
 </nav>
+
 <div class="container my-4">
-  <h2 class="mb-4 text-center">Mentor/Mentee Stories</h2>
-  <div class="row">
-    <div class="col-md-6 mb-4">
-      <div class="card">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/mOqTt379FQ0" title="Inspiring Mentee Story 1" allowfullscreen></iframe>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Camille's Journey into Tech</h5>
-          <p class="card-text">Camille shares how her SPARK mentorship helped her overcome challenges in coding.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6 mb-4">
-      <div class="card">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/KxUXtkszbvo" title="Inspiring Mentee Story 2" allowfullscreen></iframe>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Camille MAGIC Presentation</h5>
-          <p class="card-text">Camille demonstated her wish list project.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <h2 class="mb-4 text-center">How SPARK Works</h2>
+  <p> SPARK Tech Africa is a technology education program designed to help students build foundational computer science and programming skills through structured coursework and hands-on projects.
+Students selected for the program will be enrolled in an online course delivered through Google Classroom. Throughout the program, students will complete lessons, coding exercises, and assignments that introduce key computer science concepts and programming skills.
+After completing the course curriculum, students will apply their knowledge by designing and building an independent final project. The project allows students to demonstrate what they have learned while exploring a topic that interests them.
+Unlike traditional one-on-one mentorship programs, students will work independently through the course material at their own pace. However, support will always be available. If a student encounters a challenge they cannot solve on their own, they may submit a help request form. A volunteer mentor will then schedule a meeting to provide guidance, answer questions, and help the student overcome obstacles before they continue working independently.
+This model encourages self-directed learning while still providing personalized support when needed. By the end of the program, students will have developed technical skills, problem-solving abilities, and a completed project that showcases their growth.
+</p>
 </div>
 </body>
 </html>
