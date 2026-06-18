@@ -19,10 +19,11 @@ body {
 }
 
 .hero {
-    background: linear-gradient(135deg, #003366, #0055aa);
+    background: #0055aa;
     color: white;
     padding: 100px 20px;
     text-align: center;
+    height: 400px
 }
 
 .hero h1 {
@@ -115,7 +116,7 @@ footer {
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#">SPARK</a>
+        <a class="navbar-brand fw-bold" href="index.html">SPARK</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -141,10 +142,6 @@ footer {
             SPARK Tech Africa empowers students with computer science skills
             through structured learning, hands-on coding projects, and mentor support.
         </p>
-
-        <a href="register.php" class="btn btn-light btn-lg mt-4">
-            Join the Next Cohort
-        </a>
     </div>
 </section>
 
@@ -285,30 +282,6 @@ footer {
             </div>
         </div>
 
-    </div>
-</section>
-
-<!-- Stats -->
-<section class="stats">
-    <div class="container">
-        <div class="row text-center">
-
-            <div class="col-md-4">
-                <h2>100%</h2>
-                <p>Problem Set-Based Learning</p>
-            </div>
-
-            <div class="col-md-4">
-                <h2>1</h2>
-                <p>Final Portfolio Project</p>
-            </div>
-
-            <div class="col-md-4">
-                <h2>∞</h2>
-                <p>Opportunities to Create</p>
-            </div>
-
-        </div>
     </div>
 </section>
 
