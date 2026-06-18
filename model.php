@@ -22,7 +22,7 @@ body {
     background: #0055aa;
     color: white;
     text-align: center;
-    padding: 120px 20px;
+    padding: 100px 10px;
 }
 
 .hero h1 {
@@ -314,7 +314,7 @@ footer {
             Join a community of students learning technology skills and building real projects.
         </p>
 
-        <a href="register.php" class="btn btn-light btn-lg mt-3">
+        <a href="https://forms.gle/dChDTe9hmuDxktRG7" class="btn btn-light btn-lg mt-3">
             Sign Up
         </a>
     </div>
