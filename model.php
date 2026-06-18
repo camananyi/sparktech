@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Learn | SPARK</title>
+  <title>Model | SPARK</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
   <style>
@@ -50,14 +50,13 @@
 </nav>
 
 <div class="container my-4">
-  <h2 class="mb-4 text-center">Learning Resources</h2>
-  <ul class="list-group">
-    <li class="list-group-item"><a href="https://www.w3schools.com" target="_blank">W3Schools – Learn HTML, CSS, JavaScript and more</a></li>
-    <li class="list-group-item"><a href="https://cs50.harvard.edu/x/" target="_blank">Harvard CS50 – Intro to Computer Science</a></li>
-    <li class="list-group-item"><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp – Hands-on coding lessons</a></li>
-    <li class="list-group-item"><a href="https://www.khanacademy.org/computing/computer-programming" target="_blank">Khan Academy – Programming lessons</a></li>
-    <li class="list-group-item"><a href="https://girlswhocode.com/programs" target="_blank">Girls Who Code – Sister community programs</a></li>
-  </ul>
+  <h2 class="mb-4 text-center">How SPARK Works</h2>
+  <p> SPARK Tech Africa is a technology education program designed to help students build foundational computer science and programming skills through structured coursework and hands-on projects.
+Students selected for the program will be enrolled in an online course delivered through Google Classroom. Throughout the program, students will complete lessons, coding exercises, and assignments that introduce key computer science concepts and programming skills.
+After completing the course curriculum, students will apply their knowledge by designing and building an independent final project. The project allows students to demonstrate what they have learned while exploring a topic that interests them.
+Unlike traditional one-on-one mentorship programs, students will work independently through the course material at their own pace. However, support will always be available. If a student encounters a challenge they cannot solve on their own, they may submit a help request form. A volunteer mentor will then schedule a meeting to provide guidance, answer questions, and help the student overcome obstacles before they continue working independently.
+This model encourages self-directed learning while still providing personalized support when needed. By the end of the program, students will have developed technical skills, problem-solving abilities, and a completed project that showcases their growth.
+</p>
 </div>
 </body>
 </html>

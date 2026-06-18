@@ -49,7 +49,7 @@
         </button>
 
         <button class="btn btn-success" onclick="showForm('mentee')">
-            Mentee Registration
+            Student Registration
         </button>
     </div>
 
