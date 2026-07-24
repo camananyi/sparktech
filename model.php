@@ -115,7 +115,7 @@ footer {
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">SPARK</a>
+        <a class="navbar-brand" href="index.html">SPARK</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -322,7 +322,7 @@ footer {
 
 <!-- Footer -->
 <footer>
-    © 2025 SPARK Initiative. Empowering the next generation of African tech leaders.
+    © 2026 SPARK Initiative. Empowering the next generation of African tech leaders.
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
