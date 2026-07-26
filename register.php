@@ -31,7 +31,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="model.php">Model</a></li>
-        <li class="nav-item"><a class="nav-link active" href="register.php">Register</a></li>
+        <li class="nav-item"><a class="nav-link active" href="https://forms.gle/B8ms6uRZmQYzZGAR8">Apply</a></li>
         <!-- <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li> -->
         <li class="nav-item"><a class="nav-link" href="https://albums.memento.com/sparktechafrica">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="learn.php">Learn</a></li>
@@ -67,7 +67,7 @@ function showForm(type) {
     const frame = document.getElementById("formFrame");
 
     if (type === "mentee") {
-        frame.src = "https://docs.google.com/forms/d/e/1FAIpQLSeKdf_P5CB-lE-levyxtetAd2zsGTqXbzfwXf4rfQ6CDhQrCA/viewform?embedded=true";
+        frame.src = "https://forms.gle/B8ms6uRZmQYzZGAR8";
     } else {
         frame.src = "https://docs.google.com/forms/d/e/1FAIpQLSe5DXtG8qksTWIJM3gP3NXluReMRFQkbryZOsDjoEa43KQcSA/viewform?embedded=true";
     }
