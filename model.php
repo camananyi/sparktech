@@ -151,7 +151,7 @@ footer {
     <div class="row justify-content-center">
         <div class="col-lg-9">
             <p class="lead text-center">
-                SPARK Tech Africa is a technology education program designed to help
+                SPARK Tech Africa is a completely free technology education program designed to help
                 students develop foundational computer science and programming skills.
                 Students progress through a structured online curriculum and then
                 apply what they learn by creating a final project of their own.
@@ -314,7 +314,7 @@ footer {
             Join a community of students learning technology skills and building real projects.
         </p>
 
-        <a href="https://forms.gle/dChDTe9hmuDxktRG7" class="btn btn-light btn-lg mt-3">
+        <a href="https://forms.gle/LyGEiSEaQNVL2oWb8" class="btn btn-light btn-lg mt-3">
             Sign Up
         </a>
     </div>
