@@ -14,7 +14,7 @@
 
   .page-header {
     background: #f4f7fb;
-    padding: 50px 20px;
+    padding: 20px 20px;
     text-align: center;
   }
   .page-header h1 { color: #003366; font-weight: 700; }
