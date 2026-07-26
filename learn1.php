@@ -42,16 +42,16 @@
   .resource-card p { color: #555; line-height: 1.5; flex-grow: 1; }
 
   .resource-card .btn {
-    align-self: flex-start;
+    align-self: center;
     margin-top: 12px;
     border-radius: 20px;
   }
 
-  .w3schools   { border-color: #4169E1; }
-  .cs50        { border-color: #C97B2A; }
-  .freecodecamp{ border-color: #2E8B57; }
+  .w3schools   { border-color: #4682B4; }
+  .cs50        { border-color: #4682B4; }
+  .freecodecamp{ border-color: #4682B4; }
   .khanacademy { border-color: #4682B4; }
-  .gwc         { border-color: #F4A261; }
+  .gwc         { border-color: #4682B4; }
 
   footer {
     margin-top: 60px;
@@ -96,16 +96,14 @@
 
     <div class="col-12 col-sm-6 col-lg-4">
       <div class="resource-card w3schools">
-        <div class="resource-icon">🌐</div>
         <h5>W3Schools</h5>
-        <p>Learn HTML, CSS, JavaScript and more with bite-sized lessons and a live code editor.</p>
+        <p>Learn HTML, CSS, JavaScript and more with easy to follow along lessons and a live code editor.</p>
         <a href="https://www.w3schools.com" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">Visit site</a>
       </div>
     </div>
 
     <div class="col-12 col-sm-6 col-lg-4">
       <div class="resource-card cs50">
-        <div class="resource-icon">🎓</div>
         <h5>Harvard CS50</h5>
         <p>Harvard's renowned Intro to Computer Science course — free, rigorous, and beginner-friendly.</p>
         <a href="https://cs50.harvard.edu/x/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">Visit site</a>
@@ -114,7 +112,6 @@
 
     <div class="col-12 col-sm-6 col-lg-4">
       <div class="resource-card freecodecamp">
-        <div class="resource-icon">💻</div>
         <h5>freeCodeCamp</h5>
         <p>Hands-on coding lessons and certifications covering web dev, Python, data science, and more.</p>
         <a href="https://www.freecodecamp.org" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">Visit site</a>
@@ -123,18 +120,16 @@
 
     <div class="col-12 col-sm-6 col-lg-4">
       <div class="resource-card khanacademy">
-        <div class="resource-icon">📘</div>
         <h5>Khan Academy</h5>
-        <p>Structured programming lessons with instant feedback — great for reinforcing the basics.</p>
+        <p>Structured programming lessons with instant feedback: great for reinforcing the basics.</p>
         <a href="https://www.khanacademy.org/computing/computer-programming" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">Visit site</a>
       </div>
     </div>
 
     <div class="col-12 col-sm-6 col-lg-4">
       <div class="resource-card gwc">
-        <div class="resource-icon">🤝</div>
         <h5>Girls Who Code</h5>
-        <p>A sister community with programs, clubs, and resources for girls building a future in tech.</p>
+        <p>A community with programs, clubs, and resources for girls building a future in tech.</p>
         <a href="https://girlswhocode.com/programs" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">Visit site</a>
       </div>
     </div>
