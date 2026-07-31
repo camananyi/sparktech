@@ -13,11 +13,43 @@
     .gallery-hero { background-color: #f9f9f9; padding: 50px 20px; text-align: center; }
     footer { padding: 20px; background: #333; color: #fff; text-align: center; }
 
+    /* Event filter bar — only shown once there's more than one event (see script at bottom) */
+    .filter-bar { padding: 20px; text-align: center; display: none; }
+    .filter-btn {
+      border: 1px solid #003366;
+      color: #003366;
+      background: #fff;
+      border-radius: 20px;
+      padding: 6px 18px;
+      margin: 4px;
+      font-size: 0.9rem;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: #003366;
+      color: #fff;
+    }
+
+    /* Event block — one per event; duplicate this block to add a new event */
+    .event-block { padding: 10px 20px 50px; }
+    .event-header {
+      max-width: 1100px;
+      margin: 0 auto 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #003366;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .event-header h2 { color: #003366; margin: 0; }
+    .event-date { color: #6c757d; font-size: 0.95rem; }
+
     .gallery-grid {
+      max-width: 1100px;
+      margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 20px;
-      padding: 0 20px 60px;
     }
     .gallery-item {
       position: relative;
@@ -45,21 +77,6 @@
       transition: opacity 0.3s ease;
     }
     .gallery-item:hover .gallery-caption { opacity: 1; }
-
-    .filter-bar { padding: 20px; text-align: center; }
-    .filter-btn {
-      border: 1px solid #003366;
-      color: #003366;
-      background: #fff;
-      border-radius: 20px;
-      padding: 6px 18px;
-      margin: 4px;
-      font-size: 0.9rem;
-    }
-    .filter-btn.active, .filter-btn:hover {
-      background: #003366;
-      color: #fff;
-    }
 
     #lightboxModal .modal-content { background: transparent; border: none; }
     #lightboxModal img { max-height: 80vh; width: 100%; object-fit: contain; border-radius: 8px; }
@@ -94,40 +111,47 @@
   </div>
 </section>
 
-<div class="filter-bar">
+<!--
+  Event filter bar: built automatically from the data-event attributes below.
+  Stays hidden while there's only one event block; appears on its own once you add a second.
+-->
+<div class="filter-bar" id="filterBar">
   <button class="filter-btn active" data-filter="all">All</button>
-  <button class="filter-btn" data-filter="workshops">Workshops</button>
-  <button class="filter-btn" data-filter="mentorship">Mentorship</button>
-  <button class="filter-btn" data-filter="projects">Student Projects</button>
-  <button class="filter-btn" data-filter="events">Events</button>
 </div>
 
-<div class="gallery-grid" id="galleryGrid">
-  <!-- PLACEHOLDER IMAGES — replace src with real photos (e.g. images/photo-01.jpg) -->
-  <div class="gallery-item" data-category="workshops" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="https://placehold.co/1200x800/003366/ffffff?text=Workshop+Photo+1" data-caption="Coding workshop — Nairobi cohort">
-    <img src="https://placehold.co/500x400/003366/ffffff?text=Workshop+1" alt="Coding workshop">
-    <div class="gallery-caption">Coding workshop — Nairobi cohort</div>
-  </div>
-  <div class="gallery-item" data-category="mentorship" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="https://placehold.co/1200x800/0d6efd/ffffff?text=Mentorship+Photo" data-caption="1:1 mentorship session">
-    <img src="https://placehold.co/500x400/0d6efd/ffffff?text=Mentorship" alt="Mentorship session">
-    <div class="gallery-caption">1:1 mentorship session</div>
-  </div>
-  <div class="gallery-item" data-category="projects" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="https://placehold.co/1200x800/198754/ffffff?text=Final+Project" data-caption="Student final project demo">
-    <img src="https://placehold.co/500x400/198754/ffffff?text=Final+Project" alt="Student project demo">
-    <div class="gallery-caption">Student final project demo</div>
-  </div>
-  <div class="gallery-item" data-category="events" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="https://placehold.co/1200x800/6f42c1/ffffff?text=Demo+Day" data-caption="Demo Day 2026">
-    <img src="https://placehold.co/500x400/6f42c1/ffffff?text=Demo+Day" alt="Demo Day">
-    <div class="gallery-caption">Demo Day 2026</div>
-  </div>
-  <div class="gallery-item" data-category="workshops" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="https://placehold.co/1200x800/003366/ffffff?text=Workshop+Photo+2" data-caption="Intro to Python workshop">
-    <img src="https://placehold.co/500x400/003366/ffffff?text=Workshop+2" alt="Python workshop">
-    <div class="gallery-caption">Intro to Python workshop</div>
-  </div>
-  <div class="gallery-item" data-category="mentorship" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="https://placehold.co/1200x800/0d6efd/ffffff?text=Mentor+Call" data-caption="Remote mentor call">
-    <img src="https://placehold.co/500x400/0d6efd/ffffff?text=Mentor+Call" alt="Remote mentor call">
-    <div class="gallery-caption">Remote mentor call</div>
-  </div>
+<div id="galleryEvents">
+
+  <!-- ============================================================
+       EVENT BLOCK — copy this whole <section> to add a new event.
+       Change data-event (used for filtering) and the date shown.
+       ============================================================ -->
+  <section class="event-block" data-event="Demo Day 2026">
+    <div class="event-header">
+      <h2>Demo Day 2026</h2>
+      <span class="event-date">June 15, 2026</span>
+    </div>
+    <div class="gallery-grid">
+      <!-- PLACEHOLDER IMAGES — replace src / data-full with real photos (e.g. images/photo-01.jpg) -->
+      <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="https://placehold.co/1200x800/003366/ffffff?text=Demo+Day+1" data-caption="Demo Day 2026 — student presentations">
+        <img src="https://placehold.co/500x400/003366/ffffff?text=Photo+1" alt="Demo Day photo">
+        <div class="gallery-caption">Student presentations</div>
+      </div>
+      <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="https://placehold.co/1200x800/0d6efd/ffffff?text=Demo+Day+2" data-caption="Demo Day 2026 — mentors in attendance">
+        <img src="https://placehold.co/500x400/0d6efd/ffffff?text=Photo+2" alt="Demo Day photo">
+        <div class="gallery-caption">Mentors in attendance</div>
+      </div>
+      <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="https://placehold.co/1200x800/198754/ffffff?text=Demo+Day+3" data-caption="Demo Day 2026 — final project showcase">
+        <img src="https://placehold.co/500x400/198754/ffffff?text=Photo+3" alt="Demo Day photo">
+        <div class="gallery-caption">Final project showcase</div>
+      </div>
+      <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="https://placehold.co/1200x800/6f42c1/ffffff?text=Demo+Day+4" data-caption="Demo Day 2026 — group photo">
+        <img src="https://placehold.co/500x400/6f42c1/ffffff?text=Photo+4" alt="Demo Day photo">
+        <div class="gallery-caption">Group photo</div>
+      </div>
+    </div>
+  </section>
+  <!-- ========================== END EVENT BLOCK ========================== -->
+
 </div>
 
 <!-- Lightbox Modal -->
@@ -154,20 +178,36 @@
     document.getElementById('lightboxCaption').textContent = item.getAttribute('data-caption');
   });
 
-  // Filter buttons
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const galleryItems = document.querySelectorAll('.gallery-item');
-  filterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.getAttribute('data-filter');
-      galleryItems.forEach(item => {
-        const show = filter === 'all' || item.getAttribute('data-category') === filter;
-        item.style.display = show ? '' : 'none';
+  // Build the event filter bar from whatever event-blocks exist on the page.
+  // With one event, the bar stays hidden. Add more <section class="event-block">
+  // blocks and this fills itself in automatically — no manual filter editing needed.
+  const eventBlocks = document.querySelectorAll('.event-block');
+  const filterBar = document.getElementById('filterBar');
+
+  if (eventBlocks.length > 1) {
+    eventBlocks.forEach(block => {
+      const name = block.getAttribute('data-event');
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn';
+      btn.setAttribute('data-filter', name);
+      btn.textContent = name;
+      filterBar.appendChild(btn);
+    });
+
+    filterBar.style.display = 'block';
+
+    filterBar.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        eventBlocks.forEach(block => {
+          const show = filter === 'all' || block.getAttribute('data-event') === filter;
+          block.style.display = show ? '' : 'none';
+        });
       });
     });
-  });
+  }
 </script>
 </body>
 </html>
