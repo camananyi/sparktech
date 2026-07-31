@@ -41,7 +41,7 @@
         <li class="nav-item"><a class="nav-link" href="curriculum.html">Curriculum</a></li>
         <li class="nav-item"><a class="nav-link" href="https://forms.gle/B8ms6uRZmQYzZGAR8">Apply</a></li>
         <!-- <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li> -->
-        <li class="nav-item"><a class="nav-link" href="https://albums.memento.com/sparktechafrica">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="learn.php">Learn</a></li>
         <li class="nav-item"><a class="nav-link active" href="stories.php">Stories</a></li>
       </ul>
