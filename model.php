@@ -7,8 +7,25 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-18537254935');
+
+    function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18537254935/CxwZCIr_oLAdEJegoIdF',
+      'value': 1.0,
+      'currency': 'USD',
+      'event_callback': callback
+    });
+
+    return false;
+  }
   </script>
-  
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Model | SPARK</title>
@@ -133,7 +150,13 @@ footer {
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link active" href="model.php">Model</a></li>
                 <li class="nav-item"><a class="nav-link" href="curriculum.html">Curriculum</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://forms.gle/B8ms6uRZmQYzZGAR8">Apply</a></li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://forms.gle/B8ms6uRZmQYzZGAR8"
+                        onclick="return gtag_report_conversion('https://forms.gle/B8ms6uRZmQYzZGAR8');">
+                        Apply
+                    </a>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                 <li class="nav-item"><a class="nav-link" href="learn.php">Learn</a></li>
                 <li class="nav-item"><a class="nav-link" href="stories.php">Stories</a></li>

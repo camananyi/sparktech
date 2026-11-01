@@ -7,8 +7,25 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-18537254935');
+
+    function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18537254935/CxwZCIr_oLAdEJegoIdF',
+      'value': 1.0,
+      'currency': 'USD',
+      'event_callback': callback
+    });
+
+    return false;
+  }
   </script>
-  
+
   <meta charset="UTF-8">
   <title>SPARK | Empowering African Girls in Tech</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,7 +76,13 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="model.php">Model</a></li>
         <li class="nav-item"><a class="nav-link" href="curriculum.html">Curriculum</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://forms.gle/B8ms6uRZmQYzZGAR8">Apply</a></li>
+        <li class="nav-item">
+          <a class="nav-link"
+            href="https://forms.gle/B8ms6uRZmQYzZGAR8"
+            onclick="return gtag_report_conversion('https://forms.gle/B8ms6uRZmQYzZGAR8');">
+            Apply
+          </a>
+        </li>
         <!-- <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li> -->
         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="learn.php">Learn</a></li>
@@ -96,7 +119,12 @@
       SPARK is a COMPLETELY FREE technology education program for ambitious, STEM-curious teen girls across Africa. Students aged 11 to 16 work through structured computer science coursework at their own pace. When they need support, volunteer mentors from Silicon Valley are just a request away. By the end of the program, every student designs and builds an independent tech project that reflects their interests and advances their journey in STEM.
     </p>
     <div class="d-flex justify-content-center mt-4">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScFHsxF2PA8qt06_ro_mKl7J11-udaBXI7frvhl87-LzlSnDw/viewform?usp=dialog" class="btn btn-navy me-3">Join Now</a>
+      <a
+        href="https://forms.gle/B8ms6uRZmQYzZGAR8"
+        class="btn btn-navy me-3"
+        onclick="return gtag_report_conversion('https://forms.gle/B8ms6uRZmQYzZGAR8');">
+        Join Now
+      </a>
       <a href="learn.php" class="btn btn-outline-primary">Start Learning</a>
     </div>
   </div>
